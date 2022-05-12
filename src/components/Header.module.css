@@ -12,6 +12,9 @@
     vertical-align: top;
     margin-top: 0;
 }
+.topNav a {
+    text-decoration: none;
+}
 .topLeftNav {
     padding: 1em;
     float: left;
