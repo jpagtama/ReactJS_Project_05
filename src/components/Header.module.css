@@ -1,15 +1,28 @@
 .header {
+    overflow-x: scroll;
     width: 100%;
     height: 125px;
-    padding: 10px;
     background-color: antiquewhite;
 }
+.topNav {
+    display: block;
+    height: 75px;
+}
+.topNav ul {
+    vertical-align: top;
+    margin-top: 0;
+}
+.topLeftNav {
+    padding: 1em;
+    float: left;
+    display: block;
+}
 .topRightNav {
-    padding: 2em;
+    padding: 1em;
     float: right;
     display: block;
 }
-.topRightNav li {
+.topRightNav li, .topLeftNav li {
     display: inline-block;
     margin: 5px;
 }
