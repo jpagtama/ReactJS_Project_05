@@ -2,4 +2,21 @@
     padding: 10px;
     width: 100%;
     background-color: beige;
+    display: inline-block;
+}
+.footer a {
+    text-decoration: none;
+    padding: 5px;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer ul li {
+    margin: 0;
+    padding: 5px;
+}
+.contentBlock {
+    float: left;
+    display: inline-block;
+    margin-left: 105px;
 }
