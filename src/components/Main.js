@@ -3,7 +3,9 @@ import styles from './Main.module.css'
 const Main = () => {
     return (
         <div className={styles.body} >
-            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper consequat pulvinar. Ut eget tincidunt ipsum, non efficitur diam. Vestibulum pretium porttitor eleifend. Morbi magna lorem, laoreet hendrerit tellus at, elementum porta nulla. Nam tellus odio, malesuada vel iaculis ut, pulvinar porttitor diam. Nullam ac mi viverra, facilisis massa eget, accumsan metus. Praesent bibendum fringilla nisl, eu venenatis ipsum hendrerit id. Suspendisse potenti. Donec et elit sit amet lacus convallis dapibus. Nunc rutrum nisl vel diam tincidunt aliquam. Aliquam vitae nibh sodales, aliquam eros eu, dapibus diam. In vehicula, augue ut varius auctor, tellus ligula consequat magna, et rutrum eros ante eget est. Sed quis vestibulum nibh.
+            
+            
+{/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper consequat pulvinar. Ut eget tincidunt ipsum, non efficitur diam. Vestibulum pretium porttitor eleifend. Morbi magna lorem, laoreet hendrerit tellus at, elementum porta nulla. Nam tellus odio, malesuada vel iaculis ut, pulvinar porttitor diam. Nullam ac mi viverra, facilisis massa eget, accumsan metus. Praesent bibendum fringilla nisl, eu venenatis ipsum hendrerit id. Suspendisse potenti. Donec et elit sit amet lacus convallis dapibus. Nunc rutrum nisl vel diam tincidunt aliquam. Aliquam vitae nibh sodales, aliquam eros eu, dapibus diam. In vehicula, augue ut varius auctor, tellus ligula consequat magna, et rutrum eros ante eget est. Sed quis vestibulum nibh.
 
 Donec vel massa varius, vulputate dolor quis, convallis nisi. Integer rutrum placerat risus, ac gravida est tincidunt sit amet. Quisque sit amet nulla risus. Curabitur sollicitudin tempor velit ac scelerisque. Sed a mauris enim. In augue erat, lacinia vel tellus ut, tempor bibendum urna. Nam vehicula auctor ipsum, nec posuere velit auctor ac. Ut posuere leo elit, id sagittis tellus luctus id. Proin eu ante in tellus bibendum rutrum sit amet sit amet ipsum. Nulla nec facilisis sem.
 
