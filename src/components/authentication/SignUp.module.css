@@ -1,0 +1,10 @@
+.signUpForm {
+    margin: 8rem auto;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .signUpForm {
+        width: 60%;
+    }
+}
