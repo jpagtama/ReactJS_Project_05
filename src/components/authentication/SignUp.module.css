@@ -5,6 +5,12 @@
 .signUpForm input {
     margin-bottom: 1rem;
 }
+.actions {
+    text-align:center;
+}
+.signUpButton {
+    width: 7rem;
+}
 @media (min-width: 768px) {
     .signUpForm {
         width: 60%;
