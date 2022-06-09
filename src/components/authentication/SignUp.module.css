@@ -2,7 +2,9 @@
     margin: 8rem auto;
     width: 90%;
 }
-
+.signUpForm input {
+    margin-bottom: 1rem;
+}
 @media (min-width: 768px) {
     .signUpForm {
         width: 60%;
