@@ -1,4 +1,6 @@
 import { useState,useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { authActions } from '../../store/authSlice'
 import Button from '../ui/Button'
 import Input from '../ui/Input'
 import styles from './SignUp.module.css'
@@ -8,6 +10,8 @@ const SignUp = () => {
     const [firstNameIsValid, setFirstNameIsValid] = useState(false)
     const [lastNameIsValid, setLastNameIsValid] = useState(false)
     const [emailIsValid, setEmailIsValid] = useState(false)
+    const dispatch = useDispatch()
+
     useEffect(() => {
         setIsValid(firstNameIsValid && lastNameIsValid && emailIsValid)
     }, [firstNameIsValid,lastNameIsValid,emailIsValid])
@@ -15,6 +19,9 @@ const SignUp = () => {
     const submitHandler = event => {
         event.preventDefault()
         if (!isValid) alert("The form is not valid!")
+        else {
+            dispatch(authActions.logIn())
+        }
     }
     const firstNameValidityHandler = (isValid) => {
         setFirstNameIsValid(isValid)
