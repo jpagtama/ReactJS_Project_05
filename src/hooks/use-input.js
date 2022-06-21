@@ -25,7 +25,7 @@ const useInput = (inputType = "text",getValueValidity) => {
         getValueValidity(inputIsValid)
         dispatchValue({type:"CHANGE", value:event.target.value, isValid:inputIsValid})
     }
-    const blurHandler = event => {
+    const blurHandler = () => {
         setTouched(true)
     }
     return {value:value.value, isValid:touched && value.isValid, touched, errorMessage, changeHandler,blurHandler}
