@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { forwardRef, useImperativeHandle } from 'react'
 import useInput from '../../hooks/use-input'
 import styles from './Input.module.css'
 
-const Input = (props) => {
+const Input = forwardRef((props,ref) => {
     const inputType = props.type == null? "text": props.type
     const {value,isValid,touched,errorMessage,changeHandler,blurHandler} = useInput(inputType,props.getValueValidity)
+
+    useImperativeHandle(ref, () => ({
+        value: value,
+    }))
 
     return (
         <React.Fragment>
@@ -13,5 +17,5 @@ const Input = (props) => {
             <input id={props.id} className={styles.input} type={inputType} value={value} onChange={changeHandler} onBlur={blurHandler} />
         </React.Fragment>
     )
-}
+})
 export default Input
