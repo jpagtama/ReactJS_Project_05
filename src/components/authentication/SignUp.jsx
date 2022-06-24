@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { authActions } from '../../store/authSlice'
 import Button from '../ui/Button'
 import Input from '../ui/Input'
@@ -14,6 +15,11 @@ const SignUp = () => {
     const firstNameRef = useRef()
     const lastNameRef = useRef()
     const emailRef = useRef()
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        firstNameRef.current.focus()
+    }, [])
 
     useEffect(() => {
         setIsValid(firstNameIsValid && lastNameIsValid && emailIsValid)
@@ -28,6 +34,7 @@ const SignUp = () => {
                 lastName: lastNameRef.current.value, 
                 email: emailRef.current.value
             }))
+            navigate('/')
         }
     }
     const firstNameValidityHandler = (isValid) => {
