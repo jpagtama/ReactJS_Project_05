@@ -1,8 +1,12 @@
 import React from 'react'
+import Card from '../ui/Card'
+import styles from '../../styles/Products.module.css'
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <Card className={styles.products}>
+      <div>Products</div>
+    </Card>
   )
 }
 
