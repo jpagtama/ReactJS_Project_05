@@ -1,0 +1,28 @@
+.listItem {
+    width: 100%;
+    border-bottom: 1px solid lightslategray;
+}
+.itemDetails {
+    width: 60%;
+    display: inline-block;
+}
+.itemControls {
+    padding: 1rem;
+    width: 40%;
+    float: right;
+}
+/* .itemControls input {
+    float: right;
+} */
+.itemControlsPanel, .itemInputsPanel {
+    width: 100%;
+    display: inline-block;
+}
+.itemInputsPanel {
+    text-align: right;
+}
+.itemControlsPanel button {
+    margin-top: 0.5rem;
+    float: right;
+    width: 3rem;
+}
