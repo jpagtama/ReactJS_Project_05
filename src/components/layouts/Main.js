@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { Route, Routes, Navigate } from 'react-router-dom'
 import Welcome from '../pages/Welcome'
 import Products from '../pages/Products'
-import styles from './Main.module.css'
+import styles from '../../styles/Main.module.css'
 
 
 const Main = () => {
