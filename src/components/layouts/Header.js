@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import styles from './Header.module.css'
+import styles from '../../styles/Header.module.css'
 import { useSelector } from 'react-redux'
 
 const Header = () => {
@@ -25,6 +25,7 @@ const Header = () => {
                     }
                     {isLoggedIn &&
                         <Fragment>
+                            <li>Cart</li>
                             <li><a href="0" >Log out</a></li>
                         </Fragment>
                     }
