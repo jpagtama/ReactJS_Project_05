@@ -26,7 +26,7 @@ const Header = () => {
                     }
                     {isLoggedIn &&
                         <Fragment>
-                            <li><Button onClick={} >Cart</Button></li>
+                            <li><Button >Cart</Button></li>
                             <li><a href="0" >Log out</a></li>
                         </Fragment>
                     }
